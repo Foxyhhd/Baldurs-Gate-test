@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Baldur's Gate Character</title>
+    <title>Ваш персонаж из Baldur's Gate 3</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <h1>You are {{ character }}!</h1>
-    <a href="/">Try Again</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">Об авторе</a></li>
+            <li><a href="/tests">Тесты</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container animate__animated animate__fadeInDown">
+        <h1>Вы — {{ character.name }}!</h1>
+        <img src="{{ url_for('static', filename='images/' + character.image) }}" 
+             alt="{{ character.name }}" 
+             class="character-image animate__animated animate__fadeIn">
+        <p class="description animate__animated animate__fadeInUp">{{ character.description }}</p>
+        <a href="/" class="button animate__animated animate__fadeIn">Попробовать снова</a>
+    </div>
 </body>
 </html>

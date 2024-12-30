@@ -1,23 +1,28 @@
-<!DOCKTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Baldur's Gate Quiz</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-    </head>
-    <body>
-        <h1>Who Are you in Baldur's Gate?</h1>
-        <form action="/result" method="POST">
-            <p>1. What trait best describes you?</p>
-        <input type="radio" name="question1" value="brave" id="brave">
-        <label for="brave">Brave</label><br>
-        <input type="radio" name="question1" value="wise" id="wise">
-        <label for="wise">Wise</label><br>
-        <input type="radio" name="question1" value="kind" id="kind">
-        <label for="kind">Kind</label><br><br>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/tests">Тесты</a></li>
+            <li><a href="/about">Об авторе</a></li>
+        </ul>
+    </nav>
 
-        <button type="submit">Find Out</button>
-    </form>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Добро пожаловать на сайт Baldur's Gate 3</h1>
+        
+        <div class="article-container animate__animated animate__fadeInUp">
+            <h2>Будущие статьи</h2>
+            <p>Здесь будут размещены статьи, посвященные героям и вселенной Baldur's Gate 3. Ожидайте интересные материалы!</p>
+        </div>
+    </div>
 </body>
 </html>

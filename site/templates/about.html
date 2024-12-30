@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О авторе</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/tests">Тесты</a></li>
+            <li><a href="/about">Об авторе</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>О авторе</h1>
+        <div class="author-container">
+            <div class="author-content">
+                <div class="author-photo">
+                    <img src="{{ url_for('static', filename='images/author.jpg') }}" alt="Фото автора" class="author-image">
+                </div>
+                <div class="author-bio">
+                    <p>Привет! Я — Настя. Я создала этот тест, вдохновившись миром Baldur's Gate 3. Я увлекаюсь играми, программированием и созданием интерактивных приложений. Мой путь в разработке начался несколько лет назад, и с тех пор я продолжаю учиться и создавать интересные проекты.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Контакты: <a href="mailto:author@example.com" style="color: white;">aazaytseva02@yandex.ru</a></p>
+            <p>Социальные сети: 
+                <a href="https://vk.com/kikimora2222" target="_blank" style="color: white;">Vk</a> | 
+                <a href="https://github.com/Foxyhhd" target="_blank" style="color: white;">GitHub</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

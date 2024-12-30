@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Кто ты из Baldur's Gate 3?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">Об авторе</a></li>
+            <li><a href="/tests">Тесты</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Кто ты из Baldur's Gate 3?</h1>
+        <form action="/result" method="POST">
+            <div class="question animate__animated animate__fadeInLeft">
+                <p>1. Какая черта характера вам ближе всего?</p>
+                <input type="radio" name="question1" value="brave" id="brave">
+                <label for="brave">Смелость</label><br>
+                <input type="radio" name="question1" value="wise" id="wise">
+                <label for="wise">Мудрость</label><br>
+                <input type="radio" name="question1" value="kind" id="kind">
+                <label for="kind">Доброта</label><br>
+                <input type="radio" name="question1" value="cunning" id="cunning">
+                <label for="cunning">Хитрость</label><br>
+                <input type="radio" name="question1" value="strict" id="strict">
+                <label for="strict">Строгость</label><br>
+                <input type="radio" name="question1" value="dark" id="dark">
+                <label for="dark">Тьма</label><br>
+            </div>
+
+            <div class="question animate__animated animate__fadeInRight">
+                <p>2. Какую роль вы предпочитаете в команде?</p>
+                <input type="radio" name="question2" value="leader" id="leader">
+                <label for="leader">Лидер</label><br>
+                <input type="radio" name="question2" value="healer" id="healer">
+                <label for="healer">Целитель</label><br>
+                <input type="radio" name="question2" value="fighter" id="fighter">
+                <label for="fighter">Боец</label><br>
+                <input type="radio" name="question2" value="rogue" id="rogue">
+                <label for="rogue">Разбойник</label><br>
+                <input type="radio" name="question2" value="mage" id="mage">
+                <label for="mage">Маг</label><br>
+            </div>
+
+            <div class="question animate__animated animate__fadeInLeft">
+                <p>3. Какое оружие вам нравится больше всего?</p>
+                <input type="radio" name="question5" value="sword" id="sword">
+                <label for="sword">Меч</label><br>
+                <input type="radio" name="question5" value="staff" id="staff">
+                <label for="staff">Посох</label><br>
+                <input type="radio" name="question5" value="dagger" id="dagger">
+                <label for="dagger">Кинжал</label><br>
+                <input type="radio" name="question5" value="mace" id="mace">
+                <label for="mace">Булава</label><br>
+                <input type="radio" name="question5" value="bow" id="bow">
+                <label for="bow">Лук</label><br>
+            </div>
+
+            <div class="question animate__animated animate__fadeInRight">
+                <p>4. Где бы вы предпочли проводить досуг?</p>
+                <input type="radio" name="question6" value="tavern" id="tavern">
+                <label for="tavern">Таверна</label><br>
+                <input type="radio" name="question6" value="library" id="library">
+                <label for="library">Библиотека</label><br>
+                <input type="radio" name="question6" value="wilderness" id="wilderness">
+                <label for="wilderness">Дикая природа</label><br>
+                <input type="radio" name="question6" value="castle" id="castle">
+                <label for="castle">Замок</label><br>
+                <input type="radio" name="question6" value="dark_alley" id="dark_alley">
+                <label for="dark_alley">Темный переулок</label><br>
+            </div>
+
+            <div class="question animate__animated animate__fadeInLeft">
+                <p>5. Что вы делаете, если вам стало грустно?</p>
+                <input type="radio" name="question7" value="training" id="training">
+                <label for="training">Тренируюсь</label><br>
+                <input type="radio" name="question7" value="reading" id="reading">
+                <label for="reading">Читаю</label><br>
+                <input type="radio" name="question7" value="adventure" id="adventure">
+                <label for="adventure">Отправляюсь в приключение</label><br>
+                <input type="radio" name="question7" value="meditation" id="meditation">
+                <label for="meditation">Медитирую</label><br>
+                <input type="radio" name="question7" value="drinking" id="drinking">
+                <label for="drinking">Выпиваю</label><br>
+            </div>
+
+            <div class="question animate__animated animate__fadeInRight">
+                <p>6. Какой ваш любимый цвет?</p>
+                <input type="radio" name="question8" value="red" id="red">
+                <label for="red">Красный</label><br>
+                <input type="radio" name="question8" value="blue" id="blue">
+                <label for="blue">Синий</label><br>
+                <input type="radio" name="question8" value="green" id="green">
+                <label for="green">Зеленый</label><br>
+                <input type="radio" name="question8" value="black" id="black">
+                <label for="black">Черный</label><br>
+                <input type="radio" name="question8" value="gold" id="gold">
+                <label for="gold">Золотой</label><br>
+            </div>
+            <button type="submit" class="animate__animated animate__fadeInUp">Узнать результат</button>
+        </form>
+    </div>
+</body>
+</html>

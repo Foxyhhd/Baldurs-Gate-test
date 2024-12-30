@@ -1,29 +1,183 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: url('../images/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #4CAF50;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(44, 44, 68, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
 }
 
 h1 {
-    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-form {
-    margin: 20px auto;
+/* Новые стили для блока с будущими статьями */
+.article-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Темный фон */
+    color: #fff; /* Светлый текст */
     padding: 20px;
-    background: #fff;
+    margin-top: 20px;
     border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none; /* Без обрамления, если не нужно */
+    text-align: center;
+}
+
+.article-container h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.article-container p {
+    font-size: 16px;
+}
+
+/* Стили для тестовых вопросов */
+.question {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
 }
 
 button {
+    display: inline-block;
     padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
 }
+
+button:hover {
+    background-color: #45a049;
+}
+
+.character-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.description {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.author-container  {
+    background: rgba(44, 44, 68, 0.9); /* Темный фон для блока */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.author-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.author-photo {
+    flex: 0 0 150px; /* Фиксированная ширина для фото */
+    max-width: 150px;
+}
+
+.author-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Сделать изображение круглым */
+    border: 3px solid #fff; /* Белая обводка вокруг фото */
+}
+
+.author-bio {
+    max-width: 600px;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+}
+
+.author-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
