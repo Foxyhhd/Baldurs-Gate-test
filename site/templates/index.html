@@ -1,0 +1,23 @@
+<!DOCKTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Baldur's Gate Quiz</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <h1>Who Are you in Baldur's Gate?</h1>
+        <form action="/result" method="POST">
+            <p>1. What trait best describes you?</p>
+        <input type="radio" name="question1" value="brave" id="brave">
+        <label for="brave">Brave</label><br>
+        <input type="radio" name="question1" value="wise" id="wise">
+        <label for="wise">Wise</label><br>
+        <input type="radio" name="question1" value="kind" id="kind">
+        <label for="kind">Kind</label><br><br>
+
+        <button type="submit">Find Out</button>
+    </form>
+</body>
+</html>
